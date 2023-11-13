@@ -1,36 +1,36 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
+header, section, footer {
+    margin: 20px;
 }
 
-section {
-  margin: 20px;
+#opinion-section {
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    text-align: center;
+    margin-top: 50px;
 }
-
-h2 {
-  color: #333;
-}
-
-p {
-  line-height: 1.6;
-}
-
-/* Add more styles as needed */
