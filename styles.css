@@ -1,49 +1,44 @@
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-header {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
+.parallax-container {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    perspective-origin: 0% 0%;
 }
 
-#content {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-#resources, #share {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
+    left: 0;
+}
+
+.layer1 {
+    background: url('background1.jpg') center/cover;
+    transform: translateZ(-1px) scale(2);
+}
+
+.layer2 {
+    background: url('background2.jpg') center/cover;
+    transform: translateZ(-2px) scale(3);
+}
+
+.layer3 {
+    background: url('background3.jpg') center/cover;
+    transform: translateZ(-3px) scale(4);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
 }
