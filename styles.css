@@ -5,7 +5,7 @@ body {
 }
 
 .parallax-container {
-    height: 100vh;
+    height: 300vh; /* Increased height for more scrolling space */
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 1px;
@@ -43,5 +43,5 @@ body {
     padding: 20px;
     text-align: center;
     color: #fff;
-    margin-top: 100vh; /* Adjusted to ensure content doesn't overlap with parallax layers */
+    margin-top: 300vh; /* Adjusted to ensure content doesn't overlap with parallax layers */
 }
