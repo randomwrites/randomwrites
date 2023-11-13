@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Parallax Website</title>
+    <title>Old-Fashioned Parchment Website</title>
 </head>
 <body>
-    <div class="parallax-container">
-        <div class="parallax-layer layer1"></div>
-        <div class="parallax-layer layer2"></div>
-        <div class="parallax-layer layer3"></div>
-        <div class="content">
-            <h1>Welcome to the Parallax Website</h1>
-            <p>This is a simple example of a parallax scrolling website.</p>
-        </div>
+    <div id="loading-screen">
+        <p>Loading...</p>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <header>
+            <h1>Old-Fashioned Parchment</h1>
+        </header>
+
+        <section id="content">
+            <p>Your old-fashioned content goes here...</p>
+        </section>
     </div>
 
     <script src="script.js"></script>
