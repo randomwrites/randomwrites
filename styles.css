@@ -1,47 +1,44 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', serif;
+    background-color: #f5e1cc; /* Parchment color */
 }
 
-.parallax-container {
-    height: 300vh; /* Increased height for more scrolling space */
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 1px;
-    perspective-origin: 0% 0%;
-}
-
-.parallax-layer {
+#loading-screen {
     position: fixed;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: #f5e1cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
 }
 
-.layer1 {
-    background: url('https://opengameart.org/sites/default/files/styles/medium/public/1_37.png') center/cover;
-    transform: translateZ(-1px) scale(2);
+#main-content {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.layer2 {
-    background: url('https://opengameart.org/sites/default/files/styles/medium/public/2_21.png') center/cover;
-    transform: translateZ(-2px) scale(3);
+#main-content.hidden {
+    display: none;
 }
 
-.layer3 {
-    background: url('https://opengameart.org/sites/default/files/styles/medium/public/3_16.png') center/cover;
-    transform: translateZ(-3px) scale(4);
-}
-
-.content {
-    position: relative;
-    z-index: 2;
-    padding: 20px;
-    text-align: center;
+header {
+    background-color: #966f33; /* Header background color */
     color: #fff;
-    margin-top: 300vh; /* Adjusted to ensure content doesn't overlap with parallax layers */
+    text-align: center;
+    padding: 20px;
+}
+
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
