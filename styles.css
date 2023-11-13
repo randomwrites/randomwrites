@@ -21,17 +21,17 @@ body {
 }
 
 .layer1 {
-    background: url('background1.jpg') center/cover;
+    background: url('https://opengameart.org/sites/default/files/styles/medium/public/1_37.png') center/cover;
     transform: translateZ(-1px) scale(2);
 }
 
 .layer2 {
-    background: url('background2.jpg') center/cover;
+    background: url('https://opengameart.org/sites/default/files/styles/medium/public/2_21.png') center/cover;
     transform: translateZ(-2px) scale(3);
 }
 
 .layer3 {
-    background: url('background3.jpg') center/cover;
+    background: url('https://opengameart.org/sites/default/files/styles/medium/public/3_16.png') center/cover;
     transform: translateZ(-3px) scale(4);
 }
 
