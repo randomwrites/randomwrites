@@ -1,13 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let layers = document.querySelectorAll('.parallax-layer');
-
-    window.addEventListener('scroll', function () {
-        let scrollPosition = window.scrollY;
-
-        layers.forEach(function (layer, index) {
-            let speed = index + 1;
-            let yPos = -(scrollPosition * speed / 5);
-            layer.style.transform = 'translate3d(0, ' + yPos + 'px, 0)';
-        });
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    // Simulate a short loading time
+    setTimeout(function () {
+        document.getElementById("loading-screen").style.display = "none";
+        document.getElementById("main-content").style.opacity = "1";
+        document.getElementById("main-content").classList.remove("hidden");
+    }, 2000);
 });
