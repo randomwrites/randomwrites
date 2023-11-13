@@ -1,16 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const opinionForm = document.getElementById('opinion-form');
+    let layers = document.querySelectorAll('.parallax-layer');
 
-    opinionForm.addEventListener('submit', function (event) {
-        event.preventDefault();
+    window.addEventListener('scroll', function () {
+        let scrollPosition = window.scrollY;
 
-        const opinionText = document.getElementById('opinion').value;
-        const nameText = document.getElementById('name').value;
-
-        // For simplicity, you can log the opinion to the console.
-        console.log(`Opinion: ${opinionText}\nName: ${nameText}`);
-
-        // You can send this data to the server using AJAX or fetch API.
-        // For this example, we'll just log it to the console.
+        layers.forEach(function (layer, index) {
+            let speed = index + 1;
+            let yPos = -(scrollPosition * speed / 5);
+            layer.style.transform = 'translate3d(0px, ' + yPos + 'px, 0)';
+        });
     });
 });
